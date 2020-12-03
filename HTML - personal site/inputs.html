@@ -1,0 +1,213 @@
+<form class="input demo page" action="index.html" method="post">
+  <h2>Inputs demo page</h2>
+  <h3>button</h3>
+  <input type="button" value="Click Me">
+  <hr>
+  <h3>checkbox</h3>
+  <p>Choose your monster's features: </p>
+  <div>
+    <input type="checkbox" id="scales" name="scales" checked>
+    <label for="scales">Scales</label>
+  </div>
+  <div>
+    <input type="checkbox" id="horns" name="horns">
+    <label for="horns">Horns</label>
+  </div>
+  <hr>
+  <h3>color</h3>
+  <p>An example demonstrating the use of the <code>&lt;input type="color"&gt;</code>
+    control.</p>
+
+  <label for="colorWell">Color:</label>
+  <input type="color" value="#ff0000" id="colorWell">
+
+  <p>Watch the paragraph colors change when you adjust the color picker.
+    As you make changes in the color picker, the first paragraph's
+    color changes, as a preview (this uses the <code>input</code>
+    event). When you close the color picker, the <code>change</code>
+    event fires, and we detect that to change every paragraph to
+    the selected color.</p>
+  <hr>
+  <h3>date</h3>
+    <label for="start">Start date:</label>
+
+      <input type="date" id="start" name="trip-start"
+         value="2020-12-22"
+         min="2018-01-01" max="2022-12-31">
+  <hr>
+  <h3>datetime-local</h3>
+    <label for="party">Enter a date and time for your party booking:</label>
+    <input id="party" type="datetime-local" name="partydate" value="2021-01-01T08:30">
+  <hr>
+
+  <h3>email</h3>
+    <label for="email">Enter your gmail.com email:</label>
+    <input type="email" id="email"
+       pattern=".+@gmail.com" size="30" required>
+
+  <hr>
+  <h3>file</h3>
+    <label for="avatar">Choose a profile picture:</label>
+    <input type="file"
+     id="avatar" name="avatar"
+     accept="image/png, image/jpeg">
+
+  <hr>
+  <h3>hidden</h3>
+    <input id="prodId" name="prodId" type="hidden" value="xm234jq">
+
+  <hr>
+  <h3>image</h3>
+    <p>Sign in to your account:</p>
+
+    <div>
+    <label for="userId">User ID</label>
+    <input type="text" id="userId" name="userId">
+    </div>
+
+    <input type="image" id="image" alt="Login"
+         src="images/loginpng.png">
+
+  <hr>
+  <h3>month</h3>
+      <label for="start">Start month:</label>
+
+    <input type="month" id="start" name="start"
+         min="2020-12" value="2020-12">
+
+  <hr>
+  <h3>number</h3>
+    <label for="tentacles">Number of eyes (10-100):</label>
+
+    <input type="number" id="eyes" name="eyes"
+         min="10" max="100">
+
+
+  <hr>
+  <h3>password</h3>
+    <div>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+    </div>
+
+    <div>
+    <label for="pass">Password (8 characters minimum):</label>
+    <input type="password" id="pass" name="password"
+           minlength="8" required>
+    </div>
+
+    <input type="submit" value="Sign in">
+
+  <hr>
+  <h3>radio</h3>
+      <div>
+      <input type="radio" id="huey" name="drone" value="huey"
+             checked>
+      <label for="huey">Huey</label>
+      </div>
+
+      <div>
+      <input type="radio" id="dewey" name="drone" value="dewey">
+      <label for="dewey">Dewey</label>
+      </div>
+
+      <div>
+      <input type="radio" id="louie" name="drone" value="louie">
+      <label for="louie">Louie</label>
+      </div>
+
+  <hr>
+  <h3>range</h3>
+    <input type="range" list="tickmarks">
+
+    <datalist id="tickmarks">
+      <option value="0" label="0%"></option>
+      <option value="10"></option>
+      <option value="20"></option>
+      <option value="30"></option>
+      <option value="40"></option>
+      <option value="50" label="50%"></option>
+      <option value="60"></option>
+      <option value="70"></option>
+      <option value="80"></option>
+      <option value="90"></option>
+      <option value="100" label="100%"></option>
+    </datalist>
+
+  <hr>
+  <h3>reset</h3>
+    <div>
+      <label for="example">Type in some sample text</label>
+      <input id="example" type="text">
+    </div>
+    <div>
+      <input type="reset" value="Reset the form">
+    </div>
+
+  <hr>
+  <h3>search</h3>
+    <div>
+      <input type="search" id="mySearch" name="q"
+       placeholder="Search the site...">
+      <button>Search</button>
+    </div>
+
+  <hr>
+  <h3>submit</h3>
+    <div>
+        <label for="example">Let's submit some text</label>
+        <input id="example" type="text" name="text">
+      </div>
+      <div>
+        <input type="submit" value="Send">
+      </div>
+
+  <hr>
+  <h3>tel</h3>
+    <div>
+      <label for="telNo">Enter a telephone number (in the form xxx-xxx-xxxx): </label>
+      <input id="telNo" name="telNo" type="tel" required
+             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+      <span class="validity"></span>
+    </div>
+    <div>
+      <button>Submit</button>
+    </div>
+
+  <hr>
+  <h3>text</h3>
+    <div>
+      <label for="uname">Choose a username: </label>
+      <input type="text" id="uname" name="name"
+             placeholder="Lower case, all one word"
+             size="30">
+    </div>
+    <div>
+      <button>Submit</button>
+    </div>
+
+    <hr>
+    <h3>time</h3>
+      <label for="appt">Choose a time for your meeting:</label>
+
+      <input type="time" id="appt" name="appt"
+           min="09:00" max="18:00" required>
+
+      <small>Office hours are 9am to 6pm</small>
+  <hr>
+  <h3>url</h3>
+    <label for="url">Enter an https:// URL:</label>
+
+    <input type="url" name="url" id="url"
+         placeholder="https://example.com"
+         pattern="https://.*" size="30"
+         required>
+
+  <hr>
+  <h3>week</h3>
+    <label for="week">Choose a week in May or June:</label>
+
+    <input type="week" name="week" id="camp-week"
+           min="2018-W18" max="2018-W26" required>
+
+</form>
